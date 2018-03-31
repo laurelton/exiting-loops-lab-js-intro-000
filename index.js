@@ -6,6 +6,7 @@ var breakOut = function(array, changeValue, stopValue) {
 
     array[i] = changeValue;
   }
+  
   return array;
 };
 
@@ -17,7 +18,14 @@ var keepGoing = function(array, changeValue, skipValue) {
 
     array[i] = changeValue;
   }
+  
   return array;
 };
 
-var findBy = function(array, findFn) {};
+var findBy = function(array, findFn) {
+  for (let i = 0; i < array.length; i++) {
+    if ( findFn(array[i]) ) {
+      return array[i];
+    }
+  }
+};
