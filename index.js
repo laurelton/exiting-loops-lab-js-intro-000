@@ -6,6 +6,7 @@ var breakOut = function(array, changeValue, stopValue) {
 
     array[i] = changeValue;
   }
+  return array;
 };
 
 var keepGoing = function(array, changeValue, skipValue) {
@@ -16,6 +17,7 @@ var keepGoing = function(array, changeValue, skipValue) {
 
     array[i] = changeValue;
   }
+  return array;
 };
 
 var findBy = function(array, findFn) {};
